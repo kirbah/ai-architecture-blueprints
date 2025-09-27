@@ -6,6 +6,12 @@ Unlike code-focused repositories, this collection emphasizes the architectural p
 
 ---
 
+## Who This Is For
+
+This repository is for the CTO, VP of Engineering, or senior architect responsible for turning AI hype into enterprise-grade reality. You are in the right place if you care more about **scalability, security, and ROI** than the latest theoretical model. Our goal is to address the **hard parts** of building and deploying AI on top of complex, existing infrastructure.
+
+---
+
 ## The Patterns
 
 This is a living document. New patterns will be added over time.
@@ -54,3 +60,9 @@ This is a living document. New patterns will be added over time.
 I'm Kiryl Bahdanau, an AI advisor helping businesses architect and implement effective and safe AI strategies. If you're a tech leader looking to de-risk your AI roadmap, let's connect.
 
 **[Connect with me on LinkedIn](https://www.linkedin.com/in/kiryl-bahdanau/)**
+
+## License
+
+This work is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE).
+
+**In plain English:** You are free to share and adapt this work for any purpose, including commercially, as long as you provide appropriate credit.

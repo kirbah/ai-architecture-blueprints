@@ -30,7 +30,7 @@ The repository will follow this hierarchical structure. Each pattern gets its ow
 
 Each pattern's `README.md` file should follow this template. The Mermaid code will be rendered automatically by GitHub.
 
-```markdown
+````markdown
 # [Pattern Number]. [Pattern Title]
 
 **[Core Principle Statement]**
@@ -43,7 +43,7 @@ Each pattern's `README.md` file should follow this template. The Mermaid code wi
 
 ### Real-World Consequences: [Section Title]
 
-*(Note: This section is optional. Omit if strong, credible case studies cannot be found.)*
+_(Note: This section is optional. Omit if strong, credible case studies cannot be found.)_
 
 - **Case Study: [Title of Case Study]**
   - **The Incident:** [Brief, neutral description of what happened.]
@@ -58,19 +58,30 @@ Each pattern's `README.md` file should follow this template. The Mermaid code wi
 ### Visual Blueprint
 
 #### Problem State: [Problem State Title]
+
 ```mermaid
 [Mermaid code for the "before" state]
 ```
 
 #### Solution State: [Solution State Title]
+
 ```mermaid
 [Mermaid code for the "after" state]
 ```
 
 ---
 
+### Use This Pattern When...
+
+- ...[Describe a specific business scenario, e.g., "your AI will interact directly with customers"].
+- ...[Mention a key risk you are trying to mitigate, e.g., "the cost of an automated error is unacceptably high"].
+- ...[List a specific organizational or technical constraint, e.g., "your knowledge is fragmented across multiple data silos"].
+- ...[Connect to a strategic goal, e.g., "you need to demonstrate a clear productivity multiplier for a knowledge management project"].
+
+---
+
 ### Resources & Related Content
 
-*   **[VIDEO]** [Platform: Title (Duration)](link-to-video)
-*   **[ARTICLE]** [Platform: Title](link-to-article)
-```
+- **[VIDEO]** [Platform: Title (Duration)](link-to-video)
+- **[ARTICLE]** [Platform: Title](link-to-article)
+````
