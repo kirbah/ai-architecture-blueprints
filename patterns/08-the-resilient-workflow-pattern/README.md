@@ -88,3 +88,14 @@ graph TD;
     class C,R1,F1,E control;
     class S,FS solution;
 ```
+
+---
+
+### Use This Pattern When...
+
+- ...your AI agent depends on **external APIs or services** that are outside of your control and may be unreliable.
+- ...the system must process large batches of data where a **single corrupted file cannot be allowed to halt the entire job**.
+- ...**graceful degradation of service** is preferable to a complete system crash during a partial outage.
+- ...you are building a production-grade system where reliability and fault tolerance are non-negotiable requirements.
+
+---

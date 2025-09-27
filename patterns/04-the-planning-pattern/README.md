@@ -63,3 +63,14 @@ graph TD;
     class E process;
     class S solution;
 ```
+
+---
+
+### Use This Pattern When...
+
+- ...the AI must accomplish a **complex, multi-step business objective** that cannot be solved by a single prompt.
+- ...you need a **transparent and auditable workflow** to debug failures and understand why the system made a particular decision.
+- ...the process involves multiple, independent tools or data sources that must be called in a specific sequence.
+- ...you need to transform an unpredictable "magic box" process into a **reliable and maintainable engineering asset**.
+
+---

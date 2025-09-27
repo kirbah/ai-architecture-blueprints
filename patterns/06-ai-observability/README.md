@@ -77,7 +77,7 @@ graph TD;
 
 ### Use This Pattern When...
 
-- ...you are deploying any AI system into a production environment.
-- ...the ongoing operational cost of the AI is a significant concern.
-- ...the quality and compliance of the AI's output can change over time due to new data or regulations.
-- ...you need to provide business stakeholders with a clear dashboard on the health and ROI of your AI investment.
+- ...you are deploying **any AI system into a production environment** and need to govern its behavior.
+- ...the ongoing **operational cost of the AI** (e.g., token usage, GPU hours) is a significant budgetary concern.
+- ...the quality and compliance of the AI's output can **silently degrade over time** due to data drift or changing user behavior.
+- ...you need to provide business stakeholders with a clear **dashboard on the health and ROI** of your AI investment.

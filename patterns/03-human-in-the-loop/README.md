@@ -52,3 +52,12 @@ graph TD;
 ```
 
 ---
+
+### Use This Pattern When...
+
+- ...the **cost of an automated error is unacceptably high**, whether in financial terms, data loss, or safety implications.
+- ...an AI-driven action is **irreversible** (e.g., executing a financial trade, deleting customer data, deploying code to production).
+- ...your process requires a clear **audit trail with human sign-off** for compliance or governance reasons.
+- ...the task involves a high degree of ambiguity or context that still requires **expert human judgment** to make the final call.
+
+---

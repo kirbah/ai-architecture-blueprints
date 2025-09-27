@@ -67,3 +67,12 @@ graph TD;
 ```
 
 ---
+
+### Use This Pattern When...
+
+- ...your end-users are **high-cost knowledge workers** (analysts, researchers, lawyers) and their time spent manually synthesizing information is a significant operational cost.
+- ...the business objective is to get a **single, synthesized answer**, not a list of 10 documents that still require manual work.
+- ...your critical knowledge is fragmented across **multiple data silos** (e.g., PDFs, databases, SharePoint) that need to be queried in concert.
+- ...you need to justify an investment in AI by demonstrating a clear **productivity multiplier**, not just a better search bar.
+
+---

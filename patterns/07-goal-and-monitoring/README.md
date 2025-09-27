@@ -80,3 +80,14 @@ graph TD;
     class S solution;
     class HITL risk;
 ```
+
+---
+
+### Use This Pattern When...
+
+- ...you are deploying an **autonomous agent** designed to achieve a specific, measurable business outcome.
+- ...the agent will run for an extended period, and you need to ensure it **doesn't deviate from its primary goal**.
+- ...a "fire-and-forget" process is too risky, and you need a system that can **detect failure or goal drift** and trigger an alert.
+- ...you need to prevent catastrophic failures like the Knight Capital incident, where an unmonitored algorithm executed a flawed goal at machine speed.
+
+---

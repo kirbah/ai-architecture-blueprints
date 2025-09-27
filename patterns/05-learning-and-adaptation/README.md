@@ -78,3 +78,14 @@ graph TD;
     class B process;
     class H human;
 ```
+
+---
+
+### Use This Pattern When...
+
+- ...the AI operates in a **dynamic environment** where performance will degrade over time if the model remains static.
+- ...you want to create a **compounding competitive advantage** by building a system that gets smarter with every user interaction.
+- ...the goal is to **personalize user experiences** based on their evolving behavior and feedback.
+- ...you need to reduce the long-term cost of manual retraining cycles by enabling the system to learn autonomously (or semi-autonomously).
+
+---

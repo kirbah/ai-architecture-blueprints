@@ -81,3 +81,12 @@ graph TD;
 ```
 
 ---
+
+### Use This Pattern When...
+
+- ...your AI will interact directly with **customers or the public**, where every output is a reflection of your brand.
+- ...you are operating in a **regulated industry** like finance, healthcare, or legal, where non-compliant advice creates significant liability.
+- ...the AI is empowered to generate content that could be interpreted as a **binding commitment** (e.g., offering discounts, stating policy).
+- ...your primary concern is mitigating **reputational risk** and preventing brand-damaging incidents from going viral.
+
+---
