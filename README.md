@@ -22,6 +22,18 @@ This is a living document. New patterns will be added over time.
   - **Problem:** Fully automated systems can fail catastrophically when an AI makes a decision at machine speed without human oversight.
   - **Solution:** Design a system where an AI makes recommendations, but a human expert provides the final approval for critical actions.
 
+- **[04. The Planning Pattern](./patterns/04-planning/README.md)**
+  - **Problem:** Simple AI agents fail at complex tasks because they can't create and follow a multi-step plan.
+  - **Solution:** Implement a planning module that allows the AI to decompose a high-level goal into a sequence of executable steps.
+
+- **[05. The Learning & Adaptation Pattern](./patterns/05-learning-and-adaptation/README.md)**
+  - **Problem:** Static AI systems can't improve over time and become obsolete as the real world changes.
+  - **Solution:** Design a feedback loop that allows the AI to learn from its successes and failures, continuously adapting and improving its performance.
+
+- **[06. The Evaluation and Monitoring Pattern](./patterns/06-evaluation-and-monitoring/README.md)**
+  - **Problem:** AI systems can fail silently, degrade over time, or incur runaway costs without a proper monitoring framework.
+  - **Solution:** Implement a continuous measurement system to track performance, risk, and cost, providing the visibility needed to govern the AI in production.
+
 ## About the Author
 
 I'm Kiryl Bahdanau, an AI advisor helping businesses architect and implement effective and safe AI strategies. If you're a tech leader looking to de-risk your AI roadmap, let's connect.
