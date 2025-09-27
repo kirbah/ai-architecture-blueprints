@@ -1,0 +1,82 @@
+# 07. The Goal and Monitoring Pattern
+
+**The core principle of the Goal and Monitoring pattern is to architect an AI system that can autonomously pursue a high-level objective by continuously tracking its own progress against predefined success criteria and adapting its actions to ensure the goal is achieved.**
+
+---
+
+### The Problem
+
+Automated systems without a clear definition of success and a mechanism to monitor progress are "fire-and-forget" liabilities. They can deviate from their intended purpose, operate on flawed assumptions, or continue running long after conditions have changed, turning a simple task into an unchecked process that wastes resources and creates significant business risk.
+
+### Real-World Consequences: The Cost of Unmonitored Automation
+
+When this architectural pattern is ignored, automated systems can run without oversight, leading to catastrophic financial and operational failures at machine speed.
+
+- **Case Study: The Knight Capital Trading Glitch**
+  - **The Incident:** On August 1, 2012, a software deployment error at Knight Capital Group caused an automated trading algorithm to execute millions of erroneous trades in just 45 minutes. The system was pursuing a flawed goal at massive scale without any effective monitoring or kill-switch to detect the deviation from expected behavior.
+  - **The Impact:** The unmonitored system acquired billions of dollars in unwanted positions, resulting in a direct loss of over $440 million that pushed the firm to the brink of bankruptcy. The U.S. Securities and Exchange Commission (SEC) later charged the firm for failing to have adequate risk management controls and safeguards in place.
+  - **Source:** [SEC.gov – SEC Charges Knight Capital With Violations of Market Access Rule](https://www.sec.gov/news/press-release/2013-222)
+  - **Alternative Source:** [The Wall Street Journal - A closer look at the Knightmare on Wall Street](https://www.wsj.com/articles/SB10000872396390443989204577582533633215846)
+
+### The Architectural Solution
+
+Instead of launching a simple, unchecked process, we architect a resilient, goal-oriented system. We explicitly define a **High-Level Goal** with clear, measurable success criteria. The system is composed of three key parts:
+
+1.  An **AI Agent** that executes actions to make progress toward the goal.
+2.  A **State Tracker** that observes the outcomes of the agent's actions.
+3.  A **Success Evaluator** that continuously compares the current state against the goal's success criteria.
+
+If the goal is not yet met, the evaluator allows the agent to continue. If the agent deviates significantly or fails, the evaluator uses an **Escalation Trigger**, often invoking the **[Human-in-the-Loop Pattern](./patterns/03-human-in-the-loop/README.md)** for review. This transforms the system from a brittle tool into an autonomous agent that can reliably pursue an objective and be safely managed.
+
+### Visual Blueprint
+
+#### Problem State: The Unchecked Process
+
+```mermaid
+graph TD;
+    %% Define Node Styles
+    classDef default fill:#fff,stroke:#343A40,stroke-width:2px;
+    classDef risk fill:#FFF1F1,stroke:#D32F2F,stroke-width:2px,color:#D32F2F;
+    classDef process fill:#E0E0E0,stroke:#343A40,stroke-width:2px;
+
+    %% Define Diagram Structure
+    A[Start Process] --> B{Unmonitored AI Execution};
+    B -- "No Feedback Loop" --> C((Goal Drift & Catastrophic Failure));
+
+    %% Apply Styles to Nodes
+    class B process;
+    class C risk;
+```
+
+#### Solution State: The Goal-Oriented System
+
+```mermaid
+graph TD;
+    %% Define Node Styles
+    classDef default fill:#fff,stroke:#343A40,stroke-width:2px;
+    classDef control fill:#E3F2FD,stroke:#1976D2,stroke-width:3px,color:#1976D2;
+    classDef solution fill:#E8F5E9,stroke:#388E3C,stroke-width:3px,color:#388E3C;
+    classDef process fill:#E0E0E0,stroke:#343A40,stroke-width:2px;
+    classDef risk fill:#FFF1F1,stroke:#D32F2F,stroke-width:2px,color:#D32F2F;
+
+    %% Define Diagram Structure
+    A[High-Level Goal Defined] --> B{AI Agent};
+
+    subgraph Monitoring & Feedback Loop
+        direction LR
+        B -- "Executes Action" --> ST(State Tracker);
+        ST -- "Provides Current State" --> SE{Success Evaluator};
+    end
+
+    SE -- "Is Goal Met? -> No" --> B;
+    SE -- "Is Goal Met? -> Yes" --> S([Successful Outcome]);
+    SE -- "Deviation Detected?" --> ET{{Escalation Trigger}};
+    ET --> HITL([Invoke Human-in-the-Loop Pattern]);
+
+
+    %% Apply Styles to Nodes
+    class B process;
+    class SE,ET,ST control;
+    class S solution;
+    class HITL risk;
+```

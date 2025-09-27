@@ -11,28 +11,43 @@ Unlike code-focused repositories, this collection emphasizes the architectural p
 This is a living document. New patterns will be added over time.
 
 - **[01. The Safety Guardrail Pattern](./patterns/01-safety-guardrails/README.md)**
+
   - **Problem:** Unconstrained LLMs can accept malicious prompts and generate harmful, inaccurate, or brand-damaging content.
   - **Solution:** Implement a framework of input sanitization and output validation to act as a firewall between the user and the model.
 
 - **[02. The Reasoning Engine Pattern](./patterns/02-reasoning-engine/README.md)**
+
   - **Problem:** Standard RAG (Retrieval-Augmented Generation) systems often return lists of documents, not direct answers, forcing users to do the hard work of synthesis.
   - **Solution:** Architect a system that synthesizes information from multiple sources to provide a single, actionable answer to a user's query.
 
 - **[03. The Human-in-the-Loop Pattern](./patterns/03-human-in-the-loop/README.md)**
+
   - **Problem:** Fully automated systems can fail catastrophically when an AI makes a decision at machine speed without human oversight.
   - **Solution:** Design a system where an AI makes recommendations, but a human expert provides the final approval for critical actions.
 
-- **[04. The Planning Pattern](./patterns/04-planning/README.md)**
-  - **Problem:** Simple AI agents fail at complex tasks because they can't create and follow a multi-step plan.
-  - **Solution:** Implement a planning module that allows the AI to decompose a high-level goal into a sequence of executable steps.
+- **[04. The Planning Pattern](./patterns/04-the-planning-pattern/README.md)**
+
+  - **Problem:** Simple, single-shot AI agents are excellent at specific, contained tasks, but fail when faced with complex business objectives.
+  - **Solution:** Architect a system where an AI first decomposes a complex, high-level goal into a sequence of executable steps, transforming an unpredictable, black-box process into a transparent, auditable, and reliable workflow.
 
 - **[05. The Learning & Adaptation Pattern](./patterns/05-learning-and-adaptation/README.md)**
+
   - **Problem:** Static AI systems can't improve over time and become obsolete as the real world changes.
   - **Solution:** Design a feedback loop that allows the AI to learn from its successes and failures, continuously adapting and improving its performance.
 
 - **[06. The Evaluation and Monitoring Pattern](./patterns/06-evaluation-and-monitoring/README.md)**
+
   - **Problem:** AI systems can fail silently, degrade over time, or incur runaway costs without a proper monitoring framework.
   - **Solution:** Implement a continuous measurement system to track performance, risk, and cost, providing the visibility needed to govern the AI in production.
+
+- **[07. The Goal and Monitoring Pattern](./patterns/07-goal-and-monitoring/README.md)**
+
+  - **Problem:** Automated systems without a clear definition of success and a mechanism to monitor progress are "fire-and-forget" liabilities.
+  - **Solution:** Architect an AI system that can autonomously pursue a high-level objective by continuously tracking its own progress against predefined success criteria and adapting its actions to ensure the goal is achieved.
+
+- **[08. The Resilient Workflow Pattern](./patterns/08-the-resilient-workflow-pattern/README.md)**
+  - **Problem:** The core principle of the Resilient Workflow pattern is to architect a system that anticipates and gracefully manages failures, ensuring that an AI agent can recover, retry, or fail safely without causing catastrophic operational disruption.
+  - **Solution:** Design a dedicated Resilience Layer that decouples the AI agent's core logic from the complexities of error handling.
 
 ## About the Author
 
