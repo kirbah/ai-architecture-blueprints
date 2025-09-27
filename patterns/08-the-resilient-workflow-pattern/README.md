@@ -12,19 +12,11 @@ The drive for full automation often creates "glass cannon" systems: powerful but
 
 When this architectural pattern is ignored, systems break in predictable and damaging ways.
 
-- **Case Study: The Customer Service Dead-End**
-
-  - **The Incident:** A customer service chatbot attempts to retrieve order information, but the backend database API is temporarily unavailable. The unhandled error causes the bot to crash or enter an infinite loop, providing no information to the user.
-  - **The Impact:** A frustrated customer, a dead-end user experience, and a support ticket that now requires human intervention, defeating the purpose of the automation.
-
-- **Case Study: The Halted Data Pipeline**
-
-  - **The Incident:** An AI agent is tasked with processing 10,000 documents. The 50th document is corrupted and unreadable. The agent throws an unhandled exception and the entire batch process terminates.
-  - **The Impact:** A critical data processing job is left 99.5% incomplete. This delays business intelligence reports and requires an engineer to manually debug the entire batch, find the single offending file, and restart the process.
-
-- **Case Study: The Rogue Trading Bot**
-  - **The Incident:** An automated financial trading bot receives an unexpected error code from the exchange's API (e.g., "market closed"). Without proper error handling, it might misinterpret this as a successful trade or repeatedly attempt the invalid trade, flooding the system with failed requests.
-  - **The Impact:** Potential for financial loss, system blacklisting due to API abuse, and a complete failure of the automated strategy.
+- **Case Study: The Boeing 737 MAX MCAS System Failures**
+  - **The Incident:** The 737 MAX's MCAS flight control system was designed to automatically push the aircraft's nose down to prevent a stall. However, the system was designed with no resilience; it relied on a single angle-of-attack sensor. When this single sensor failed, it provided erroneous data, causing the MCAS to repeatedly and powerfully activate, overwhelming the pilots.
+  - **The Impact:** The system's brittle, non-resilient design, which could not gracefully handle a single point of failure, was a primary cause of two crashes (Lion Air Flight 610 and Ethiopian Airlines Flight 302) that killed 346 people. The entire 737 MAX fleet was grounded for 20 months, costing Boeing over $20 billion in fines and losses and destroying public trust.
+  - **Source:** [https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings](https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings)
+  - **Alternative Source:** [https://en.wikipedia.org/wiki/Maneuvering_Characteristics_Augmentation_System](https://en.wikipedia.org/wiki/Maneuvering_Characteristics_Augmentation_System)
 
 ### The Architectural Solution
 

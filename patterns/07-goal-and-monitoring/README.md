@@ -13,8 +13,8 @@ Automated systems without a clear definition of success and a mechanism to monit
 When this architectural pattern is ignored, automated systems can run without oversight, leading to catastrophic financial and operational failures at machine speed.
 
 - **Case Study: The Knight Capital Trading Glitch**
-  - **The Incident:** On August 1, 2012, a software deployment error at Knight Capital Group caused an automated trading algorithm to execute millions of erroneous trades in just 45 minutes. The system was pursuing a flawed goal at massive scale without any effective monitoring or kill-switch to detect the deviation from expected behavior.
-  - **The Impact:** The unmonitored system acquired billions of dollars in unwanted positions, resulting in a direct loss of over $440 million that pushed the firm to the brink of bankruptcy. The U.S. Securities and Exchange Commission (SEC) later charged the firm for failing to have adequate risk management controls and safeguards in place.
+  - **The Incident:** A deployment error caused an automated trading algorithm at Knight Capital to activate a dormant, flawed function. Without any effective monitoring to detect the deviation from its intended goal, the system executed millions of erroneous trades in just 45 minutes, buying and selling massive volumes of stock at market prices.
+  - **The Impact:** The unmonitored agent's actions resulted in a catastrophic loss of over $440 million, pushing the firm to the brink of bankruptcy and forcing its emergency sale. The U.S. Securities and Exchange Commission (SEC) charged the firm for its failure to have risk management controls that could have prevented the disaster, making it the definitive case study for the dangers of an unmonitored AI pursuing a flawed goal at machine speed.
   - **Source:** [SEC.gov – SEC Charges Knight Capital With Violations of Market Access Rule](https://www.sec.gov/news/press-release/2013-222)
   - **Alternative Source:** [The Wall Street Journal - A closer look at the Knightmare on Wall Street](https://www.wsj.com/articles/SB10000872396390443989204577582533633215846)
 

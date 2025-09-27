@@ -16,7 +16,10 @@ While the Goal-Oriented Pattern (#7) focuses on an agent's ability to autonomous
 
 When this architectural pattern is ignored, the consequences are not sudden crashes but slow, costly degradations that erode value and introduce risk.
 
-**(Placeholder: Research and add a strong, real-world case study here. Example: A company that experienced significant financial loss or brand damage due to unmonitored AI cost or quality degradation.)**
+- **Case Study: The Uber Self-Driving Car Fatality**
+  - **The Incident:** An Uber self-driving test vehicle struck and killed a pedestrian in Tempe, Arizona. While the system's sensors detected the pedestrian, it failed to classify her correctly and did not trigger an emergency stop. The human safety driver, who was meant to be monitoring the system, was distracted and looking at their phone.
+  - **The Impact:** This was the first recorded fatality involving a fully autonomous vehicle, leading to the suspension of Uber's testing program and criminal charges against the safety driver. An investigation revealed a lack of monitoring for both AI performance (the system had a history of classification errors) and the human operator's attention, demonstrating how a lack of observability can allow critical risks to go undetected until it is too late.
+  - **Source:** [National Transportation Safety Board (NTSB) - Collision Between Vehicle Controlled by Developmental Automated Driving System and Pedestrian](https://www.ntsb.gov/investigations/Pages/HWY18MH010.aspx)
 
 ### The Architectural Solution
 
