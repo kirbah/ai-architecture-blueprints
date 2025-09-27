@@ -35,10 +35,10 @@ This is a living document. New patterns will be added over time.
   - **Problem:** Static AI systems can't improve over time and become obsolete as the real world changes.
   - **Solution:** Design a feedback loop that allows the AI to learn from its successes and failures, continuously adapting and improving its performance.
 
-- **[06. The Evaluation and Monitoring Pattern](./patterns/06-evaluation-and-monitoring/README.md)**
+- **[06. The AI Observability Pattern](./patterns/06-ai-observability/README.md)**
 
-  - **Problem:** AI systems can fail silently, degrade over time, or incur runaway costs without a proper monitoring framework.
-  - **Solution:** Implement a continuous measurement system to track performance, risk, and cost, providing the visibility needed to govern the AI in production.
+  - **Problem:** An unobserved AI is a "black box" that can silently degrade, burn budget, and create compliance risks.
+  - **Solution:** Architect an observability system to provide a real-time "control panel" for the AI's operational health, cost, and behavior.
 
 - **[07. The Goal and Monitoring Pattern](./patterns/07-goal-and-monitoring/README.md)**
 
