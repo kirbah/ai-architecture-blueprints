@@ -2,6 +2,8 @@
 
 **The core principle of the Human-in-the-Loop pattern is to architect a strategic control point where a human expert reviews, approves, or modifies an AI-generated recommendation before it is executed, preventing automated failures in critical systems.**
 
+**Business Outcome:** Mitigates the risk of catastrophic failures in high-stakes processes by ensuring critical decisions are validated by human expertise and accountability.
+
 ---
 
 ### The Problem
@@ -83,3 +85,9 @@ graph TD;
 - ...the task involves a high degree of ambiguity or context that still requires **expert human judgment** to make the final call.
 
 ---
+
+### Trade-offs & Implementation Realities
+
+- **The Speed vs. Safety Trade-off:** This pattern is a deliberate choice to sacrifice the speed of full automation for the safety of human oversight. It creates an intentional bottleneck to prevent high-speed automated errors.
+- **Risk of "Rubber-Stamping":** If the AI's recommendations are correct 99% of the time, human reviewers can become complacent and approve suggestions without proper scrutiny. The review interface must be designed to counter this.
+- **Operational Cost:** You are paying for an expert's time to review the AI's work. This operational cost must be justified by the high cost of the potential failure you are preventing.

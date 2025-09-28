@@ -2,6 +2,8 @@
 
 **The core principle of the Planning Pattern is to architect a system where an AI first decomposes a complex, high-level goal into a sequence of executable steps, transforming an unpredictable, black-box process into a transparent, auditable, and reliable workflow.**
 
+**Business Outcome:** Increases the success rate of complex AI agent projects by making their behavior predictable, auditable, and easier to debug, transforming them from high-risk R&D into reliable assets.
+
 ---
 
 ### The Problem
@@ -79,3 +81,9 @@ graph TD;
 - ...you need to transform an unpredictable "magic box" process into a **reliable and maintainable engineering asset**.
 
 ---
+
+### Trade-offs & Implementation Realities
+
+- **Overhead for Simple Tasks:** This pattern is overkill for simple, single-shot AI tasks. Applying it unnecessarily adds latency and complexity to the system.
+- **Planner Brittleness:** The quality of the entire outcome is capped by the quality of the initial plan. A weak or "hallucinated" plan will cause the agent to perform the wrong tasks perfectly.
+- **Error Handling Complexity:** Managing state and handling a failure in one step of a multi-step plan requires a much more sophisticated recovery or re-planning strategy than in a simple agent.

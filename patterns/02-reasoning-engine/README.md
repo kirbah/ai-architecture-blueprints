@@ -2,6 +2,8 @@
 
 **The core principle of the Reasoning Engine pattern is to create an AI system that moves beyond simple document retrieval to synthesize information from multiple sources, providing direct, actionable answers to complex business questions.**
 
+**Business Outcome:** Increases the ROI of existing data assets and boosts the productivity of knowledge workers by automating the manual synthesis of information.
+
 ---
 
 ### The Problem
@@ -76,3 +78,9 @@ graph TD;
 - ...you need to justify an investment in AI by demonstrating a clear **productivity multiplier**, not just a better search bar.
 
 ---
+
+### Trade-offs & Implementation Realities
+
+- **"Garbage In, Garbage Out":** The quality of the synthesized answer is entirely dependent on the quality and accuracy of the underlying data sources. A reasoning engine can't fix a data quality problem; it can only expose it.
+- **Cost & Complexity:** This is not a simple search index. A true reasoning engine involves significant data engineering to connect to silos and can incur higher costs due to more complex and numerous LLM calls.
+- **Risk of Hallucination:** The synthesis step can introduce subtle misinterpretations or confident-sounding "hallucinations" that are not supported by the source documents. Traceability back to the source data is critical for validation.

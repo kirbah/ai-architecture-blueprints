@@ -2,6 +2,8 @@
 
 **The core principle of the Resilient Workflow pattern is to architect a system that anticipates and gracefully manages failures, ensuring that an AI agent can recover, retry, or fail safely without causing catastrophic operational disruption.**
 
+**Business Outcome:** Increases operational stability and user trust by ensuring AI systems can handle predictable failures gracefully, preventing brittle automation from causing costly downtime and data corruption.
+
 ---
 
 ### The Problem
@@ -91,3 +93,9 @@ graph TD;
 - ...you are building a production-grade system where reliability and fault tolerance are non-negotiable requirements.
 
 ---
+
+### Trade-offs & Implementation Realities
+
+- **Significant Architectural Complexity:** Building a truly resilient system is much more complex than a simple "happy path" workflow. The logic for retries, fallbacks, and escalations adds considerable engineering overhead.
+- **Risk of Masking Deeper Issues:** A well-implemented retry logic can sometimes hide a chronic problem in a downstream service. If an API is consistently failing, retrying might keep the system running, but it doesn't fix the root cause.
+- **Cost of Redundancy:** Fallback systems are, by definition, redundant infrastructure that must be built and maintained. The level of investment in resilience must be proportional to the business cost of a system failure.

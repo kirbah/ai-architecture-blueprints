@@ -2,6 +2,8 @@
 
 **The core principle of the Goal and Monitoring pattern is to architect an AI system that can autonomously pursue a high-level objective by continuously tracking its own progress against predefined success criteria and adapting its actions to ensure the goal is achieved.**
 
+**Business Outcome:** Enables the safe deployment of autonomous AI agents, ensuring they reliably achieve business objectives while preventing costly or catastrophic operational failures from goal deviation.
+
 ---
 
 ### The Problem
@@ -91,3 +93,9 @@ graph TD;
 - ...you need to prevent catastrophic failures like the Knight Capital incident, where an unmonitored algorithm executed a flawed goal at machine speed.
 
 ---
+
+### Trade-offs & Implementation Realities
+
+- **The Difficulty of Defining "Done":** The most critical part of this pattern is defining the goal with precise, measurable success criteria. A vague or poorly defined goal will lead the agent to optimize for the wrong outcome, even if it functions perfectly.
+- **Monitoring Overhead:** The state tracking and evaluation components add significant architectural complexity. You are effectively building a supervisory system around the core agent, which requires its own development and maintenance.
+- **Lagging Indicators:** In many business processes, the true outcome of an agent's action is not immediately known. The monitoring system must be designed to handle this delay without letting the agent stray too far from its goal based on incomplete data.

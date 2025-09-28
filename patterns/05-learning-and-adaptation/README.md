@@ -2,6 +2,8 @@
 
 **The core principle of the Learning & Adaptation pattern is to architect a feedback loop that allows an AI system to learn from its real-world performance, transforming it from a static asset that degrades over time into a dynamic system that continuously improves.**
 
+**Business Outcome:** Protects the long-term ROI of AI systems by enabling them to improve with real-world data, creating a compounding competitive advantage and reducing manual maintenance costs.
+
 ---
 
 ### The Problem
@@ -95,3 +97,9 @@ graph TD;
 - ...you need to reduce the long-term cost of manual retraining cycles by enabling the system to learn autonomously (or semi-autonomously).
 
 ---
+
+### Trade-offs & Implementation Realities
+
+- **Risk of Negative Learning:** An unsupervised feedback loop is vulnerable to manipulation or learning undesirable behaviors from biased data (as seen with Microsoft's Tay chatbot). Most enterprise systems require a Human-in-the-Loop to approve adaptations.
+- **Significant Architectural Overhead:** This is not just a model; it's a complex system for data capture, monitoring, and retraining. The engineering investment is substantially higher than for a static model deployment.
+- **The "Cold Start" Problem:** The system's performance may be suboptimal at launch and only improves after collecting a critical mass of real-world interaction data. Managing user expectations during this initial phase is key.

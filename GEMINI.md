@@ -35,6 +35,8 @@ Each pattern's `README.md` file should follow this template. The Mermaid code wi
 
 **[Core Principle Statement]**
 
+**Business Outcome:** [One-line statement framing the pattern in terms of business value (cost, revenue, risk).]
+
 ---
 
 ### The Problem
@@ -80,8 +82,9 @@ _(Note: This section is optional. Omit if strong, credible case studies cannot b
 
 ---
 
-### Resources & Related Content
+### Trade-offs & Implementation Realities
 
-- **[VIDEO]** [Platform: Title (Duration)](link-to-video)
-- **[ARTICLE]** [Platform: Title](link-to-article)
+- **Overhead for Simple Tasks:** This pattern can be overkill for simple, single-shot AI tasks. Applying it unnecessarily adds latency and complexity.
+- **Planner Brittleness:** The quality of the entire outcome depends on the quality of the initial plan. A weak planning model can lead the system down the wrong path from the start.
+- **[Another Trade-off]:** [Brief explanation of the trade-off.]
 ````

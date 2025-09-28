@@ -2,6 +2,8 @@
 
 **The core principle of the AI Observability pattern is to architect a system of continuous measurement that provides deep visibility into a production AI's operational health, cost, and behavior, transforming it from an unmanaged black box into a governable and reliable business asset.**
 
+**Business Outcome:** Provides the governance required to manage production AI, enabling cost control, proactive risk management, and the ability to prove the system's ongoing ROI to stakeholders.
+
 ---
 
 ### The Problem
@@ -84,3 +86,11 @@ graph TD;
 - ...the ongoing **operational cost of the AI** (e.g., token usage, GPU hours) is a significant budgetary concern.
 - ...the quality and compliance of the AI's output can **silently degrade over time** due to data drift or changing user behavior.
 - ...you need to provide business stakeholders with a clear **dashboard on the health and ROI** of your AI investment.
+
+---
+
+### Trade-offs & Implementation Realities
+
+- **Investment in Infrastructure:** Observability is not free. It requires investment in logging, metrics, and tracing infrastructure, as well as the engineering effort to integrate these tools with the AI system.
+- **Signal vs. Noise:** It's easy to track thousands of metrics, but the real challenge is identifying the few Key Performance Indicators (KPIs) that accurately reflect the business value and operational health of the system.
+- **Alerts vs. Action:** A dashboard is useless without a clear operational response plan. You must define who is responsible for acting on an alert and what actions they are expected to take when performance degrades or costs spike.

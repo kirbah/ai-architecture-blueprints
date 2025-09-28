@@ -2,6 +2,8 @@
 
 **The core principle of the Safety Guardrail pattern is to architect explicit checks and balances around an AI model to ensure its outputs are safe, compliant, and aligned with business objectives, transforming it from an unpredictable "black box" into a reliable asset.**
 
+**Business Outcome:** De-risks public-facing AI deployments by protecting against brand damage, financial loss, and compliance penalties.
+
 ---
 
 ### The Problem
@@ -90,3 +92,9 @@ graph TD;
 - ...your primary concern is mitigating **reputational risk** and preventing brand-damaging incidents from going viral.
 
 ---
+
+### Trade-offs & Implementation Realities
+
+- **Latency vs. Safety:** Every guardrail is an extra processing step that adds to the total response time. The challenge is balancing the required level of safety with the need for a good user experience.
+- **Risk of False Positives:** Overly strict guardrails can block legitimate prompts, making the system feel rigid or unhelpful to the end-user.
+- **Continuous Maintenance:** This is not a "set it and forget it" system. New "jailbreak" techniques emerge constantly, requiring ongoing updates to the guardrail logic.
