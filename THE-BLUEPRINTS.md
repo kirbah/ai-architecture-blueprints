@@ -38,5 +38,5 @@ This is a living document. New patterns will be added over time.
   - **Solution:** Architect an AI system that can autonomously pursue a high-level objective by continuously tracking its own progress against predefined success criteria and adapting its actions to ensure the goal is achieved.
 
 - **[08. The Resilient Workflow Pattern](./patterns/08-the-resilient-workflow-pattern/README.md)**
-  - **Problem:** The core principle of the Resilient Workflow pattern is to architect a system that anticipates and gracefully manages failures, ensuring that an AI agent can recover, retry, or fail safely without causing catastrophic operational disruption.
+  - **Problem:** Brittle automation ("glass cannons") crashes on predictable errors like API timeouts, causing operational downtime and eroding user trust.
   - **Solution:** Design a dedicated Resilience Layer that decouples the AI agent's core logic from the complexities of error handling.
