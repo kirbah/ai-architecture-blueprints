@@ -1,5 +1,7 @@
 # The AI Architecture Blueprints
 
+This collection is for the CTO, VP of Engineering, or senior architect responsible for turning AI hype into enterprise-grade reality. The blueprints focus on the hard parts of building and deploying AI that is scalable, secure, and delivers real business value.
+
 This is a living document. New patterns will be added over time.
 
 - **[01. The Safety Guardrail Pattern](./patterns/01-safety-guardrails/README.md)**

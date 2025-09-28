@@ -8,7 +8,7 @@
 
 ### The Problem
 
-The drive for full automation often creates "glass cannon" systems: powerful but incredibly brittle. When an AI agent encounters an unexpected error—a failed API call, a network timeout, or corrupted data—a poorly architected system will crash. This leads to operational downtime, potential data corruption, and a complete loss of user trust, turning a promising innovation into an unreliable liability.
+Many AI systems are architected with a critical flaw: they are designed only for the "happy path." This creates brittle, "glass cannon" systems that shatter the moment they encounter a predictable, real-world failure: a temporary network outage, a rate-limited API, or a single piece of corrupted data. The result is not just a single failed transaction, but a cascade of costly business problems: operational downtime, corrupted data pipelines, and a complete loss of business trust. Without resilience, a powerful AI innovation quickly becomes an unreliable—and expensive—liability.
 
 ### Real-World Consequences: The Cost of Brittle Automation
 
