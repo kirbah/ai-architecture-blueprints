@@ -15,7 +15,7 @@ Many expensive "AI" knowledge systems are just fancy search bars. They retrieve 
 - **Case Study: JPMorgan Chase's Contract Intelligence (COiN)**
 
   - **The Incident:** Legal and financial teams were required to manually review and interpret thousands of complex commercial loan agreements. This repetitive, labor-intensive process consumed over **360,000 work-hours annually** and was prone to costly human error in compliance.
-  - **The Impact:** The COiN platform was developed to act as a reasoning engine, using AI to analyze and extract critical data from 12,000 documents in mere seconds—a task that previously took weeks. This automation saves the firm hundreds of thousands of hours per year, reduces compliance risk, and allows employees to focus on higher-value strategic work.
+  - **The Impact:** The COiN platform was developed to act as a reasoning engine, using AI to analyze and extract critical data from **12,000 documents** in mere seconds—a task that previously took weeks.
   - **Source:** [Medium - How JPMorgan Uses AI to Save 360,000 Legal Hours A Year](https://medium.com/@arahmedraza/how-jpmorgan-uses-ai-to-save-360-000-legal-hours-a-year-6e94d58a557b)
 
 - **Case Study: JPMorgan Chase's Emerging Opportunities Engine**

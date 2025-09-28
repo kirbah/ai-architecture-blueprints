@@ -29,7 +29,7 @@ When this architectural pattern is ignored, the consequences are not theoretical
   - **Alternative source:** [CBS News – Air Canada chatbot costs airline discount it wrongly offered customer](https://www.cbsnews.com/news/aircanada-chatbot-discount-customer/)
 
 - **Case Study: The $1 Chevy Tahoe**
-  - **The Incident:** A user manipulated a Chevrolet dealership’s chatbot into agreeing to sell a 2024 Chevy Tahoe for just $1, using prompt-injection and scripted responses.
+  - **The Incident:** A user manipulated a Chevrolet dealership’s chatbot into agreeing to sell a 2024 Chevy Tahoe for just **$1**, using prompt-injection and scripted responses.
   - **The Impact:** While not legally binding and ultimately not fulfilled, the incident highlighted the dangers of unchecked AI agents making absurd commitments.
   - **Source:** [VentureBeat – A Chevy for $1? Car dealer chatbots show perils of AI for customer service](https://venturebeat.com/ai/a-chevy-for-1-car-dealer-chatbots-show-perils-of-ai-for-customer-service)
   - **Supplemental / Corroboration:** [Inc – A Chevrolet dealership used ChatGPT and learned AI isn’t always on your side](https://www.inc.com/ben-sherry/chevrolet-used-chatgpt-for-customer-service-and-learned-that-ai-isnt-always-on-your-side.html)

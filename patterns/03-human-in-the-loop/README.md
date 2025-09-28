@@ -15,7 +15,7 @@ The rush for 100% automation creates brittle, high-risk systems. An AI making de
 - **Case Study: IBM Watson for Oncology's Dangerous Recommendations**
 
   - **The Incident:** IBM's flagship AI for healthcare, Watson for Oncology, was found to be providing unsafe and incorrect cancer treatment recommendations. The system was trained on a small number of synthetic cases and data from a single institution, leading it to suggest treatments that were medically inappropriate for real-world patients.
-  - **The Impact:** The system's failures eroded trust in AI within the medical community and led to the eventual sale of IBM Watson Health after an estimated investment loss of over $4 billion. It highlighted that even with experts "in the loop," an AI's recommendations can be dangerously flawed if its training and logic are not transparent and verifiable.
+  - **The Impact:** The system's failures eroded trust in AI within the medical community and led to the eventual sale of IBM Watson Health after an estimated investment loss of over **$4 billion**. It highlighted that even with experts "in the loop," an AI's recommendations can be dangerously flawed if its training and logic are not transparent and verifiable.
   - **Source:** [Henrico Dolfing - Case Study: IBM Watson for Oncology Failure](https://www.henricodolfing.com/2024/12/case-study-ibm-watson-for-oncology-failure.html)
     [Harvard Ethics - Post-8 Abyss: Examining AI Failures and Lessons Learned](https://www.ethics.harvard.edu/blog/post-8-abyss-examining-ai-failures-and-lessons-learned)
 

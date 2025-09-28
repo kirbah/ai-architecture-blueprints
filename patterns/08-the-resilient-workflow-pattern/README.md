@@ -16,7 +16,7 @@ When this architectural pattern is ignored, systems break in predictable and dam
 
 - **Case Study: The Boeing 737 MAX MCAS System Failures**
   - **The Incident:** The 737 MAX's MCAS flight control system was designed to automatically push the aircraft's nose down to prevent a stall. However, the system was designed with no resilience; it relied on a single angle-of-attack sensor. When this single sensor failed, it provided erroneous data, causing the MCAS to repeatedly and powerfully activate, overwhelming the pilots.
-  - **The Impact:** The system's brittle, non-resilient design, which could not gracefully handle a single point of failure, was a primary cause of two crashes (Lion Air Flight 610 and Ethiopian Airlines Flight 302) that killed 346 people. The entire 737 MAX fleet was grounded for 20 months, costing Boeing over $20 billion in fines and losses and destroying public trust.
+  - **The Impact:** The system's brittle, non-resilient design, which could not gracefully handle a single point of failure, was a primary cause of two crashes (Lion Air Flight 610 and Ethiopian Airlines Flight 302) that killed **346 people**. The entire 737 MAX fleet was grounded for **20 months**, costing Boeing over **$20 billion** in fines and losses and destroying public trust.
   - **Source:** [https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings](https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings)
   - **Alternative Source:** [https://en.wikipedia.org/wiki/Maneuvering_Characteristics_Augmentation_System](https://en.wikipedia.org/wiki/Maneuvering_Characteristics_Augmentation_System)
 
