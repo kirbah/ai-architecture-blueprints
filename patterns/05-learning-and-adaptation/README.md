@@ -12,6 +12,12 @@ AI systems are not "one-and-done" projects. A model trained on historical data i
 
 When this architectural pattern is ignored, organizations are left with intelligent systems that become dumber over time, creating significant strategic and financial risk.
 
+- **Case Study: Microsoft Tay Chatbot Corruption**
+
+  - **The Incident:** In March 2016, Microsoft launched Tay, an AI chatbot designed to learn conversational patterns from Twitter interactions with 18-24 year olds. Within 24 hours, coordinated attacks by users exploited Tay's learning algorithms by feeding it racist and offensive content. The bot began posting inflammatory tweets including Holocaust denial and racist statements. Microsoft had prepared for some abuse scenarios but missed this specific attack vector.
+  - **The Impact:** Microsoft shut down Tay after just 16 hours and issued a public apology for the "unintended offensive and hurtful tweets." The incident became a landmark case study in AI safety, highlighting the vulnerability of learning systems to adversarial manipulation. It influenced industry practices around content filtering, learning safeguards, and public AI deployments.
+  - **Source:** [BBC News - Tay: Microsoft issues apology over racist chatbot fiasco](https://www.bbc.com/news/technology-35902104)
+
 - **Case Study: Google's AlphaEvolve**
 
   - **The Incident:** At Google's scale, optimizing complex systems like data center scheduling or low-level code for hardware like TPUs is a monumental task. A static algorithm, however good, cannot adapt to new hardware or workloads.

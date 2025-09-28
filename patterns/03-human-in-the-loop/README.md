@@ -22,6 +22,7 @@ The rush for 100% automation creates brittle, high-risk systems. An AI making de
   - **The Incident:** Amazon created an AI tool to screen and rank job candidates. The model was trained on a decade of the company's own hiring data, which was heavily skewed toward male applicants. As a result, the AI learned to penalize resumes containing the word "women's" and systematically downgraded graduates from all-women's colleges.
   - **The Impact:** Amazon was forced to abandon the project after engineers could not eliminate the learned bias. The incident became a prominent example of how AI can perpetuate and scale historical biases, leading to significant reputational damage and highlighting the risk of automated decision-making in HR without rigorous human oversight.
   - **Source:** [Reuters - Amazon scraps secret AI recruiting tool that showed bias against women](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G)
+  - **Alternative source:** [BBC News - Amazon scrapped 'sexist AI' tool](https://www.bbc.com/news/technology-45809919)
 
 - **Case Study: The Dutch SyRI Welfare Fraud Algorithm**
   - **The Incident:** The Netherlands deployed a secret, automated system called SyRI (System Risk Indication) to detect potential social welfare fraud. The algorithm analyzed personal data from multiple government agencies to create "risk profiles," but it was exclusively used in low-income neighborhoods with high immigrant populations and offered no transparency into how it reached its conclusions.
