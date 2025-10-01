@@ -13,10 +13,9 @@ The repository will follow this hierarchical structure. Each pattern gets its ow
 |
 ├── patterns/
 |   ├── 01-pattern-name/
-|   |   ├── README.md                 <- The core explanation
-|   |   ├── diagram-problem.svg         <- (Future) Exported SVG of the "before" state
-|   |   ├── diagram-solution.svg        <- (Future) Exported SVG of the "after" state
-|   |   └── diagram-source.excalidraw   <- (Future) Linkable source file
+|   |   ├── README.md                          <- The core explanation
+|   |   ├── diagram-problem.excalidraw         <- (Future) Exported SVG of the "before" state
+|   |   └── diagram-solution.excalidraw        <- (Future) Exported SVG of the "after" state
 |
 ├── .gitignore
 ├── CONTRIBUTING.md
