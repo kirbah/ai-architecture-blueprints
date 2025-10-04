@@ -28,7 +28,7 @@ Instead of launching a simple, unchecked process, we architect a resilient, goal
 2.  A **State Tracker** that observes the outcomes of the agent's actions.
 3.  A **Success Evaluator** that continuously compares the current state against the goal's success criteria.
 
-If the goal is not yet met, the evaluator allows the agent to continue. If the agent deviates significantly or fails, the evaluator uses an **Escalation Trigger**, often invoking the **[Human-in-the-Loop Pattern](./patterns/03-human-in-the-loop/README.md)** for review. This transforms the system from a brittle tool into an autonomous agent that can reliably pursue an objective and be safely managed.
+If the goal is not yet met, the evaluator allows the agent to continue. If the agent deviates significantly or fails, the evaluator uses an **Escalation Trigger**, often invoking the **[Human-in-the-Loop Pattern](../03-human-in-the-loop/README.md)** for review. This transforms the system from a brittle tool into an autonomous agent that can reliably pursue an objective and be safely managed.
 
 ### Visual Blueprint
 

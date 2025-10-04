@@ -1,31 +1,12 @@
 # AI Architecture Blueprints
 
+**➡️ [View the full documentation and live site](https://kirbah.github.io/ai-architecture-blueprints/)**
+
+---
+
 A collection of practical design patterns and blueprints for building safe, robust, and production-ready Generative AI systems. This repository is a resource for CTOs, VPs of Engineering, and architects who are responsible for implementing AI that delivers business value without introducing unacceptable risk.
 
 Unlike code-focused repositories, this collection emphasizes the architectural principles and guardrails needed to transform "black box" models into predictable, enterprise-grade assets.
-
----
-
-## Who This Is For
-
-This repository is for the CTO, VP of Engineering, or senior architect responsible for turning AI hype into enterprise-grade reality. You are in the right place if you care more about **scalability, security, and ROI** than the latest theoretical model. Our goal is to address the **hard parts** of building and deploying AI on top of complex, existing infrastructure.
-
----
-
-### Where to Start?
-
-Not sure where to begin? Start with the pattern that addresses your most urgent pain point:
-
-- **If your primary concern is risk and brand safety...**
-  - Start with **[Pattern #1: The Safety Guardrail](./patterns/01-safety-guardrails/README.md)**.
-- **If you need to show ROI from your data on a tight budget...**
-  - Start with **[Pattern #2: The Reasoning Engine](./patterns/02-reasoning-engine/README.md)**.
-- **If you are building autonomous agents that take action...**
-  - Start with **[Pattern #7: The Goal and Monitoring Pattern](./patterns/07-goal-and-monitoring/README.md)**.
-- **If you are integrating AI with legacy systems...**
-  - Start with **[Pattern #8: The Resilient Workflow](./patterns/08-the-resilient-workflow-pattern/README.md)**.
-
-### [➡️ View the Full List of Blueprints](./THE-BLUEPRINTS.md)
 
 ---
 
