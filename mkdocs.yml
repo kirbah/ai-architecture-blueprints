@@ -1,0 +1,83 @@
+site_name: AI Architecture Blueprints
+site_description: Practical design patterns and blueprints for safe, robust, and production-ready Generative AI systems. For tech leaders and architects.
+site_author: Kiryl Bahdanau
+site_url: https://kirbah.github.io/ai-architecture-blueprints/
+repo_url: https://github.com/kirbah/ai-architecture-blueprints
+repo_name: kirbah/ai-architecture-blueprints
+
+theme:
+  name: material
+  favicon: images/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - def_list
+  - footnotes
+  - tables
+  - codehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.tasklist
+  - pymdownx.tabbed
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.keys
+
+plugins:
+  - search
+  - mermaid2
+
+extra:
+  analytics:
+    provider: google
+    property: G-4RV6MYV466
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/kiryl-bahdanau/
+    - icon: fontawesome/brands/github
+      link: https://github.com/kirbah/ai-architecture-blueprints/
+
+nav:
+  - Home: README.md
+  - Patterns:
+      - Overview: THE-BLUEPRINTS.md
+      - Safety Guardrail: 01-safety-guardrails/README.md
+      - Reasoning Engine: 02-reasoning-engine/README.md
+      - Human-in-the-Loop: 03-human-in-the-loop/README.md
+      - The Planning Pattern: 04-the-planning-pattern/README.md
+      - Learning & Adaptation: 05-learning-and-adaptation/README.md
+      - AI Observability: 06-ai-observability/README.md
+      - Goal and Monitoring: 07-goal-and-monitoring/README.md
+      - Resilient Workflow: 08-the-resilient-workflow-pattern/README.md
+  - Contributing: CONTRIBUTING.md
