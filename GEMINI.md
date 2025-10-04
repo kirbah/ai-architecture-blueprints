@@ -11,7 +11,7 @@ The repository will follow this hierarchical structure. Each pattern gets its ow
 ```
 /
 |
-├── patterns/
+├── docs/
 |   ├── 01-pattern-name/
 |   |   ├── README.md                          <- The core explanation
 |   |   ├── diagram-problem.excalidraw         <- (Future) Exported SVG of the "before" state
